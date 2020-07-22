@@ -1,0 +1,69 @@
+.preheader {
+  font-size: 1px;
+  max-height: 1px;
+  overflow: hidden;
+  color: #fafafa;
+}
+
+table {
+  td.top-logo {
+    padding-bottom: 16px;
+    margin-bottom: 16px;
+    text-align: center;
+
+    @include mobile {
+      padding-left: 0 !important;
+    }
+
+    img {
+      width: 180px;
+      margin: 0 auto;
+      display: block;
+      float: none;
+
+      @include mobile {
+        width: 142px !important;
+      }
+    }
+
+    &--rental {
+      img {
+        width: 171px;
+        height: 31px;
+
+        @include mobile {
+          width: 150px !important;
+          height: 27px !important;
+        }
+      }
+    }
+  }
+
+  td.top-links {
+    padding: $v-rhythm*2 0;
+    color: $grey;
+    text-align: center;
+    font-size: 12px !important;
+
+    @include mobile {
+      padding: $v-rhythm 0;
+    }
+
+    .top-links__pipe {
+      color: $grey-light;
+    }
+
+    .top-links__link {
+      font-weight: 600;
+      color: $grey;
+
+      &:hover {
+        color: darken($grey, 10%);
+      }
+
+      &:visited {
+        color: $grey;
+      }
+    }
+  }
+}

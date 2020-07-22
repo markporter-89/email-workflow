@@ -1,0 +1,77 @@
+<table class="container footer">
+  <tr>
+    <td>
+      <table class="row">
+        <tr>
+          <td class="wrapper content last">
+            <table class="twelve columns">
+              <tr>
+                <td class="text-pad">
+                  <table class="logo">
+                    <tr>
+                      <td class="center">
+                        <a href="https://www.arnoldclark{% if rental == true %}rental{% endif %}.com">
+                          <img editable="true" label="Logo-top"
+                            {% if rental == true %}
+                              src="images/rental-logo.png" class="footer-rental-logo center" width="154" height="28" alt="Arnold Clark Rental logo"
+                            {% else %}
+                              src="images/ac-logo.png" class="footer-ac-logo center" width="140" height="12" alt="Arnold Clark logo"
+                            {% endif %} />
+                        </a>
+                        {% if rental == true %}
+                        <table class="tp">
+                          <tr>
+                            <th class="first-row">
+                              <a href="https://uk.trustpilot.com/review/www.arnoldclarkrental.com?" class="dark-link">Rated <strong>Excellent</strong> &nbsp; <img width="95" height="18" class="stars center" src="images/5-trustpilot-stars.png" alt="Trustpilot 5 Star Rating" /></a>
+                            </th>
+                          </tr>
+                          <tr>
+                            <th class="second-row">
+                              <a href="https://uk.trustpilot.com/review/www.arnoldclarkrental.com?" class="dark-link">Over <strong><singleline>{{ trustpilot.rental_count }}</singleline></singleline></strong> reviews on <img width="90" height="24" class="tp-logo center" src="images/trustpilot-logo.png" alt="Trustpilot logo" /></a>
+                            </th>
+                          </tr>
+                        </table>
+                        {% else %}
+                        <table class="tp">
+                          <tr>
+                            <th class="first-row">
+                              <a href="https://uk.trustpilot.com/review/www.arnoldclark.com?" class="dark-link">Rated <strong>Excellent</strong> &nbsp; <img width="95" height="18" class="stars center" src="images/4.5-trustpilot-stars.png" alt="Trustpilot 4.5 Star Rating" /></a>
+                            </th>
+                          </tr>
+                          <tr>
+                            <th class="second-row">
+                              <a href="https://uk.trustpilot.com/review/www.arnoldclark.com?" class="dark-link">Over <strong><singleline>{{ trustpilot.ac_count }}</singleline></strong> reviews on <img width="90" height="24" class="tp-logo center" src="images/trustpilot-logo.png" alt="Trustpilot logo" /></a>
+                            </th>
+                          </tr>
+                        </table>
+                        {% endif %}
+                      </td>
+                    </tr>
+                  </table>
+                  <multiline label="Footer text">
+                    <p>{{ footer_reason }}</p>
+                  </multiline>
+                  <p>Don’t want to receive emails from us any more? No problem, just <unsubscribe class="unsub">unsubscribe</unsubscribe>.</p>
+                  <multiline label="Footer Text">
+                    {% if rental == true %}
+                      <p>Our mailing address is: Arnold Clark Car & Van Rental, Renault Complex, Kerse Road, Stirling FK7 7RU.</p>
+                      <p>Our telephone number is: 0141 237 4374.</p>
+                      <p>© Copyright Arnold Clark. All rights reserved.</p>
+                      <p>Arnold Clark Car & Van Rental and Arnold Clark Vehicle Management are trading names of Arnold Clark Finance Limited, a company registered in Scotland No. 39357. Registered office: Arnold Clark, 454 Hillington Road, Glasgow, G52 4FH. VAT Registration Number: GB 334331879. Authorised and regulated by the Financial Conduct Authority.</p>
+                    {% else %}
+                      <p>Our mailing address is: Arnold Clark, 454 Hillington Road, Glasgow, G52 4FH.</p>
+                      <p>Our telephone number is: 0141 648 1200.</p>
+                      <p>© Copyright Arnold Clark. All rights reserved.</p>
+                      <p>Arnold Clark is a trading name of Arnold Clark Automobiles Limited, a company registered in Scotland No. 036386. Registered office: Arnold Clark, 454 Hillington Road, Glasgow, G52 4FH. VAT Registration Number: GB 334331879. Authorised and regulated by the Financial Conduct Authority.</p>
+                    {% endif %}
+                  </multiline>
+                </td>
+                <td class="expander"></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>

@@ -1,0 +1,38 @@
+body {
+  -ms-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  background: #fafafa;
+  margin: 0;
+  min-width: 100%;
+  padding: 0;
+  width: 100% !important;
+  font-size: 14px;
+}
+
+table {
+  &.header {
+    td {
+      padding-bottom: 0;
+      padding-top: 0;
+      .header__img {
+        width: 574px;
+        max-width: 100% !important;
+      }
+    }
+  }
+  td.content {
+    padding-top: $v-rhythm*2;
+    a {
+      color: $link-color;
+      text-decoration: underline;
+      &:active,
+      &:hover {
+        color: $link-hover;
+      }
+      &:visited {
+        color: $link-color;
+      }
+    }
+  }
+}

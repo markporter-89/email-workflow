@@ -1,0 +1,16 @@
+/*
+This mixin allows you to easily nest media queries in you class
+Usage:
+      body {
+        color: black;
+        @include md {
+          color: blue;
+        }
+      }
+*/
+
+@mixin mobile {
+  @media only screen and (max-width: 600px) {
+    @content;
+  }
+}

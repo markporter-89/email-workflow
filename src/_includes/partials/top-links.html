@@ -1,0 +1,48 @@
+<table class="container">
+  <tr>
+    <td>
+      <table class="row">
+        <tr>
+          <td class="wrapper compact last">
+            <table class="twelve columns">
+              <tr>
+                <td class="top-links">
+                  <webversion class="top-links__link">View online</webversion>
+                  <span class="top-links__pipe"> | </span>
+                  <unsubscribe class="top-links__link">Unsubscribe</unsubscribe>
+                </td>
+                <td class="expander"></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table class="container wide">
+  <tr>
+    <td>
+      <table class="row">
+        <tr>
+          <td class="wrapper compact last">
+            <table class="twelve columns">
+              <tr>
+                <td class="top-logo{% if rental == true %} top-logo--rental{% endif %}">
+                  <a href="https://www.arnoldclark{% if rental == true %}rental{% endif %}.com">
+                    <img editable="true" label="Logo-top" class="top-logo__img center"
+                      {% if rental == true %}
+                        src="images/rental-logo-top.png" width="171" alt="Arnold Clark Rental logo"
+                      {% else %}
+                        src="images/ac-logo-top.png" width="180" alt="Arnold Clark logo"
+                      {% endif %} />
+                  </a>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>

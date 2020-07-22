@@ -1,0 +1,22 @@
+{
+  "name": "piston",
+  "version": "2.1.1",
+  "description": "Quickly create responsive HTML emails that work on multiple devices. Even Outlook.",
+  "author": "Chrissy Collins",
+  "license": "ISC",
+  "scripts": {
+    "start": "concurrently \"node-sass src/_scss -o src/_includes/stylesheets --watch\" \"eleventy --serve --watch\"",
+    "build": "del _template && ELEVENTY_ENV=production eleventy && cd src; zip -r ../_template/images.zip images -x images/.*; cd .."
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^0.8.3",
+    "axios": "^0.19.0",
+    "cheerio": "^1.0.0-rc.3",
+    "clean-css": "^4.2.1",
+    "concurrently": "^4.1.0",
+    "del-cli": "^2.0.0",
+    "inky": "^1.4.1",
+    "inline-css": "^2.4.1",
+    "node-sass": "^4.12.0"
+  }
+}

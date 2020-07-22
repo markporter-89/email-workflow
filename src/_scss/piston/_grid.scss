@@ -1,0 +1,166 @@
+table[class="body"] {
+  &.body {
+    height: 100%;
+    width: 100%;
+  }
+
+  .container {
+    width: $grid-width;
+    margin: 0 auto;
+    padding: 0;
+    text-align: inherit;
+    &.bg-white {
+      background-color: #fff;
+    }
+    &.wide {
+      @include mobile {
+        width: 100%;
+        table.row {
+          margin: 0 auto;
+        }
+      }
+    }
+    &.bv {
+      border-top: solid 1px $grey-lighter;
+      border-bottom: solid 1px $grey-lighter;
+    }
+    &.bt {
+      border-top: solid 1px $grey-lighter;
+    }
+    &.bb {
+      border-bottom: solid 1px $grey-lighter;
+    }
+
+    @include mobile {
+      width: 100% !important;
+    }
+  }
+  &.row {
+    padding: 0;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+  }
+  &.container table.row {
+    display: block;
+  }
+}
+
+td.wrapper {
+  padding: 0 $h-rhythm*2 $v-rhythm*2 0;
+  position: relative;
+  &.compact {
+    padding-bottom: 0;
+  }
+  &.deep {
+    padding-bottom: $v-rhythm*3;
+  }
+}
+
+table {
+  &.column,
+  &.columns {
+    margin: 0 auto;
+  }
+  &.column td,
+  &.columns td {
+    padding: 0;
+  }
+  &.column td.sub-column,
+  &.column td.sub-columns,
+  &.columns td.sub-column,
+  &.columns td.sub-columns {
+    padding-right: $h-rhythm*2;
+  }
+}
+
+td {
+  &.sub-column,
+  &.sub-columns {
+    min-width: 0;
+  }
+}
+
+table {
+  &.container td.last,
+  &.row td.last {
+    padding-right: 0;
+  }
+  &.one {
+    width: $col;
+  }
+  &.two {
+    width: $col * 2 + $h-rhythm * 2;
+  }
+  &.three {
+    width: $col * 3 + ($h-rhythm * 4);
+  }
+  &.four {
+    width: $col * 4 + ($h-rhythm * 6);
+  }
+  &.five {
+    width: $col * 5 + ($h-rhythm * 8);
+  }
+  &.six {
+    width: $col * 6 + ($h-rhythm * 10);
+  }
+  &.seven {
+    width: $col * 7 + ($h-rhythm * 12);
+  }
+  &.eight {
+    width: $col * 8 + ($h-rhythm * 14);
+  }
+  &.nine {
+    width: $col * 9 + ($h-rhythm * 16);
+  }
+  &.ten {
+    width: $col * 10 + ($h-rhythm * 18);
+  }
+  &.eleven {
+    width: $col * 11 + ($h-rhythm * 20);
+  }
+  &.twelve {
+    width: $col * 12 + ($h-rhythm * 22);
+  }
+  &.one center {
+    min-width: 33px;
+  }
+  &.two center {
+    min-width: 83px;
+  }
+  &.three center {
+    min-width: 133px;
+  }
+  &.four center {
+    min-width: 183px;
+  }
+  &.five center {
+    min-width: 233px;
+  }
+  &.six center {
+    min-width: 283px;
+  }
+  &.seven center {
+    min-width: 333px;
+  }
+  &.eight center {
+    min-width: 383px;
+  }
+  &.nine center {
+    min-width: 433px;
+  }
+  &.ten center {
+    min-width: 483px;
+  }
+  &.eleven center {
+    min-width: 533px;
+  }
+  &.twelve center {
+    min-width: 583px;
+  }
+  &.expander {
+    visibility: hidden;
+    width: 0;
+    padding: 0 !important;
+  }
+}

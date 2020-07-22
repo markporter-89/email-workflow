@@ -1,0 +1,75 @@
+table {
+  &.btn {
+    width: 100%;
+
+    td {
+      display: block;
+      text-align: center;
+      border-radius: 3px;
+      font-weight: 600;
+      vertical-align: middle;
+      line-height: 24px;
+
+      p {
+        text-align: center;
+      }
+
+      a,
+      a:visited {
+        font-weight: 600;
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 16px;
+        display: block;
+        padding: $v-rhythm*2 $h-rhythm*2;
+      }
+    }
+  }
+
+  &.btn td a {
+    padding: 8px 0;
+    font-size: 16px;
+  }
+
+  &.btn--sm td a {
+    padding: 7px 0;
+    font-size: 14px;
+  }
+
+  &.btn--lg td a {
+    padding: $v-rhythm*2 $h-rhythm*2;
+    font-size: 16px;
+  }
+
+  &.btn td {
+    height: 40px;
+  }
+
+  &.btn--sm td {
+    height: 38px;
+  }
+
+  &.btn--lg td {
+    height: 48px;
+  }
+
+  &.btn {
+    @include button-variant(#2d3737, #ffffff, $grey-light);
+  }
+
+  &.btn--cta {
+    @include button-variant(#ffffff, $ac-green, darken($ac-green, 4%));
+  }
+
+  &.btn--secondary {
+    @include button-variant(#ffffff, $ac-bluegrey, darken($ac-bluegrey, 4%));
+  }
+
+  &.btn--danger {
+    @include button-variant(#ffffff, $ac-red, darken($ac-red, 4%));
+  }
+
+  &.btn--primary {
+    @include button-variant(#ffffff, $ac-blue, darken($ac-blue, 4%));
+  }
+}

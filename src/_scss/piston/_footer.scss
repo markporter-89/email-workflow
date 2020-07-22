@@ -1,0 +1,128 @@
+table.footer {
+  margin-bottom: $v-rhythm*2;
+
+  .content {
+    padding-top: $v-rhythm*6;
+    border-top: solid 1px $grey-lighter;
+
+    table.logo {
+      width: 100%;
+
+      td {
+        padding-bottom: $v-rhythm*4;
+
+        img.footer-ac-logo {
+          display: block;
+          margin: 0 auto;
+          float: none;
+          width: 140px;
+          height: 12px;
+
+          @include mobile {
+            width: 140px !important;
+            height: 12px !important;
+          }
+        }
+
+        img.footer-rental-logo {
+          display: block;
+          margin: 0 auto;
+          float: none;
+          width: 154px;
+          height: 28px;
+
+          @include mobile {
+            width: 144px !important;
+            height: 26px !important;
+          }
+        }
+      }
+    }
+
+    p {
+      color: $grey;
+      font-size: 12px;
+      line-height: 19px;
+      margin-bottom: 8px;
+      text-align: left;
+    }
+
+    a,
+    a:visited {
+      color: $grey;
+      font-weight: bold;
+      text-decoration: underline;
+    }
+
+    .unsub {
+      color: $grey-dark;
+      font-weight: bold;
+      text-decoration: underline;
+
+      &:hover {
+        color: $grey !important;
+        text-decoration: none !important;
+      }
+
+      &:visited {
+        color: $grey !important;
+      }
+    }
+
+    .dark-link {
+      color: $ac-black;
+    }
+  }
+
+  table.tp {
+    width: 100%;
+
+    th.first-row {
+      padding-top: 24px;
+    }
+
+    th.second-row {
+      padding-top: 3px;
+    }
+
+    th {
+      a {
+        font-weight: 400 !important;
+        text-decoration: none !important;
+        color: $ac-black;
+        font-size: 12px !important;
+        text-decoration: none;
+
+        &:active,
+        &:hover {
+          text-decoration: none;
+          color: $ac-black;
+        }
+
+        &:visited {
+          color: $ac-black;
+        }
+      }
+    }
+
+    img {
+      display: inline !important;
+      float: none;
+      vertical-align: middle;
+    }
+
+    img.stars {
+      width: 95px !important;
+      height: 18px !important;
+      margin-left: 6px;
+      margin-bottom: 4px;
+
+    }
+
+    img.tp-logo {
+      width: 85px !important;
+      height: 22px !important;
+      margin-bottom: 6px;
+    }
+  }
+}
